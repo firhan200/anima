@@ -1,0 +1,287 @@
+.vector svg{
+    max-height:200px;
+    max-width:200px;
+    margin-top:20px;
+}
+
+.vector{
+    width:inherit;
+    height:inherit;
+    text-align: center;
+    border-radius: 10px;
+    border:1px solid #f2f2f2;
+    box-shadow: 2px 3px 4px #cccbcb;
+}
+
+/*========================== Finance ==============================*/
+#coin{
+    animation: coin 1s infinite alternate;
+    transform-origin: center;
+}
+
+#hand{
+    animation: hand 1s infinite alternate;
+    transform-origin: center;
+}
+
+#first_bar{
+    animation: first_bar 3s infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#second_bar{
+    animation: second_bar 3s infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#third_bar{
+    animation: third_bar 3s infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes coin{
+    from{
+        transform: rotateZ(0deg);
+    }
+
+    to{
+        transform: rotateZ(15deg);
+    }
+}
+
+@keyframes hand{
+    from{
+        transform: rotateZ(-5deg) translateX(10px);
+    }
+    to{
+        transform: rotateZ(5deg) translateX(5px);
+    }
+}
+
+@keyframes first_bar{
+    from{
+        transform: scaleY(1);
+    }
+    to{
+        transform: scaleY(2) translateY(-12px);
+    }
+}
+
+@keyframes second_bar{
+    from{
+        transform: scaleY(1);
+    }
+    to{
+        transform: scaleY(1.2) translateY(-8px);
+    }
+}
+
+@keyframes third_bar{
+    from{
+        transform: scaleY(1);
+    }
+    to{
+        transform: scaleY(0.9) translateY(4px);
+    }
+}
+/*========================== Finance ==============================*/
+
+
+/*========================== Productivity ==============================*/
+#clock_arrow{
+    animation: clock_arrow 3s infinite ease-in-out;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#clock_button{
+    animation: clock_button 1.5s infinite alternate;
+    transform-origin: bottom;
+}
+
+#head{
+    animation: head 2s infinite alternate;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#left_hand{
+    animation: left_hand 0.5s infinite alternate;
+    transform-origin: right;
+}
+
+#right_hand{
+    animation: right_hand 0.5s infinite alternate;
+    transform-origin: right;
+}
+
+@keyframes clock_arrow{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes clock_button{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(10px);
+    }
+}
+
+@keyframes head{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(15deg);
+    }
+}
+
+@keyframes left_hand{
+    from{
+        transform: translateY(-100px) translateX(-200px);
+    }
+    to{
+        transform: translateY(-110px) translateX(-200px);
+    }
+}
+
+@keyframes right_hand{
+    from{
+        transform: translateY(-110px) translateX(-200px);
+    }
+    to{
+        transform: translateY(-100px) translateX(-200px);
+    }
+}
+/*========================== Productivity ==============================*/
+
+/*========================== Notification ==============================*/
+#path_icon{
+    animation: notification_icon 3s infinite linear;
+    transform-origin: left;
+    transform-box: fill-box;
+}
+
+#instagram_icon{
+    animation: notification_icon 3s infinite linear 0.3s;
+    transform-origin: left;
+    transform-box: fill-box;
+}
+
+#twitter_icon{
+    animation: notification_icon 3s infinite linear 0.6s;
+    transform-origin: left;
+    transform-box: fill-box;
+}
+
+#path_notification{
+    animation: notification_number 3s infinite ease-in-out;
+    transform-origin: left;
+    transform-box: fill-box;
+}
+
+#instagram_notification{
+    animation: notification_number 3s infinite ease-in-out 0.3s;
+    transform-origin: left;
+    transform-box: fill-box;
+}
+
+#twitter_notification{
+    animation: notification_number 3s infinite ease-in-out 0.6s;
+    transform-origin: left;
+    transform-box: fill-box;
+}
+
+#right_leaf{
+    animation: leaf_wind 2s infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#left_leaf{
+    animation: leaf_wind 2s infinite alternate 0.5s;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#notification_hand{
+    animation: notification_hand 1.5s infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#notification_phone{
+    animation: notification_phone 1.5s infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes notification_icon{
+    0%{
+        transform: translateY(999px);
+    }
+    40%{
+        transform: translateY(0px);
+    }
+    90%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-999px);
+    }
+}
+
+@keyframes notification_number{
+    0%{
+        transform: scale(0);
+    }
+    45%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1);
+    }
+    90%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1) translateY(-500px);
+    }
+}
+
+@keyframes leaf_wind{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(15deg);
+    }
+}
+
+@keyframes notification_hand{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(10deg) translateY(-10px) translateX(-10px);
+    }
+}
+
+@keyframes notification_phone{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(5deg) translateY(-5px) translateX(-3px);
+    }
+}
+/*========================== Notification ==============================*/
